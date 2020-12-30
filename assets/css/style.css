@@ -1,0 +1,630 @@
+/* common rules*/
+
+body {
+  background-color: white;
+  font-family: "Trip Sans Reg";
+  font-size: 16px;
+  cursor: default;
+}
+
+.container {
+  max-width: 1280px;
+  /*background-color: red;*/
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+/*titles */
+h1 {
+  margin-top: 30px;
+  font-size: 50px;
+  letter-spacing: 1.1px;
+  line-height: 64px;
+  font-family: "Trip Sans Med";
+}
+
+h1 span {
+  color: #f65d5d;
+}
+
+.partie1 h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: "Trip Sans Med";
+}
+.partie2 h2 {
+  margin-top: 35px;
+  font-size: 32px;
+  font-family: "Trip Sans Med";
+}
+/* .conseil h2 {
+    font-size: 32px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+  }
+  
+  .immanquable h2 {
+    font-size: 32px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 52px;
+  } */
+/* Header */
+
+header {
+  height: 60px;
+  /*background-color: blue;*/
+}
+header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav div {
+  margin-right: 20px;
+}
+header nav div:hover {
+  /* background-color: rgb(0, 0, 0, 0.9); */
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+header nav div i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+header img {
+  width: 188px;
+}
+
+header button {
+  font-family: inherit;
+  color: white;
+  padding: 15px;
+  display: flex;
+  background-color: black;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+header button:hover {
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+/* MAIN */
+
+/* Title */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 32px;
+  margin-top: 90px;
+  font-family: "Trip Sans Med";
+
+  margin-bottom: 90px;
+}
+.title div {
+  border-top: black solid 2px;
+  flex: 1;
+  display: flex;
+}
+
+/* Partie Navigation */
+
+main .navigation {
+  display: flex;
+}
+
+.navigation > div {
+  padding: 15px;
+  margin-top: 27px;
+  flex: 1;
+  border: 2px rgb(3, 3, 3) solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  align-items: center;
+}
+.navigation > div:hover {
+  background-color: rgb(0, 0, 0, 1);
+  color: white;
+}
+.navigation i {
+  font-size: 23px;
+}
+
+.navigation > div:not(:last-child) {
+  margin-right: 16px;
+}
+
+/*Paris pictures */
+
+.parispictures {
+  margin-top: 26px;
+  height: 430px;
+  display: flex;
+}
+.opacity1 .parispictures > div img {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.opacity1 .parispictures > div:hover img {
+  opacity: 0.5;
+}
+
+.colonne1 {
+  height: 100%;
+  flex: 1;
+  margin-right: 2px;
+}
+.colonne1 img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  object-fit: cover;
+}
+
+.colonne2 {
+  height: 100%;
+  width: 480px;
+}
+
+.colonne2 img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+.parispictures .colonne2 img:first-child {
+  border-top-right-radius: 20px;
+}
+.colonne2 img:last-child {
+  border-bottom-right-radius: 20px;
+}
+.petit {
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Georgia";
+  font-size: 12px;
+  color: #474747;
+  cursor: pointer;
+}
+.petit p span:hover {
+  border-bottom: black 1px solid;
+}
+
+/* Paris resume */
+
+.parisresume {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 72px;
+  height: 400px;
+}
+
+.partie1 {
+  height: 100%;
+  width: 630px;
+}
+.partie1 p {
+  font-family: Georgia;
+  color: #474747;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.partie2 {
+  width: 525px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #f65d5d;
+  border: white solid 1px;
+}
+.partie2 img {
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.partie2 button {
+  font-family: inherit;
+  color: white;
+  padding: 15px;
+
+  background-color: black;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.partie2 button:hover {
+  background-color: rgb(0, 0, 0, 0.9);
+}
+.parisresume button {
+  font-family: inherit;
+  color: white;
+  padding: 25px;
+  background-color: black;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.parisresume button:hover {
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+.partie2 p {
+  padding: 15px;
+}
+
+/* Conseil voyage */
+.set {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.set div {
+  width: 300px;
+  height: 76px;
+  border: solid 3px #e0e0e0;
+  border-radius: 25px;
+  display: flex;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.set div:hover {
+  border: #c5c4c4 3px solid;
+}
+
+.set img {
+  width: 85px;
+}
+.set span {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+
+  padding: 15px;
+}
+
+/* Immanquable à Paris */
+
+.caroussel {
+  width: 100%;
+
+  margin-bottom: 100px;
+  display: flex;
+}
+.caroussel .text {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.caroussel .text h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.caroussel .text p {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #606060;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.caroussel .text span {
+  font-size: 14px;
+}
+.caroussel .pics {
+  height: 100%;
+
+  flex: 3;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.caroussel .column {
+  width: calc(100% / 3 - (40px / 3));
+
+  height: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.caroussel .column:not(:last-child) {
+  margin-right: 20px;
+}
+
+.caroussel .column img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.caroussel .column img:hover {
+  transform: scale(1.1);
+}
+
+.caroussel .circle {
+  border: white 3px solid;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caroussel .circle i {
+  font-size: 30px;
+  color: white;
+}
+
+.caroussel .relative {
+  position: relative;
+}
+
+.caroussel .circle:hover i {
+  color: red;
+  font-weight: 900;
+  cursor: pointer;
+}
+.caroussel div i {
+  color: #37aa6c;
+}
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: 170px;
+  background-color: #faf1ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+}
+footer img {
+  height: 32px;
+  width: 32px;
+}
+footer i {
+  font-size: 30px;
+
+  margin-left: 18px;
+  margin-right: 10px;
+}
+a:link {
+  color: #5c49d3;
+  text-decoration: none;
+}
+a:visited {
+  color: #5c49d3;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+
+  text-decoration: underline;
+}
+
+/* HIDDEN STUFF */
+.hidden {
+  display: none !important;
+}
+.navigation > div:nth-child(7) {
+  display: none;
+}
+.hidden2 {
+  display: none;
+}
+
+/* MEDIA QUERIES OUIIIIII */
+
+@media (max-width: 1328px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  /* NAVIGATION */
+  .navigation > div:nth-child(7) {
+    display: flex;
+  }
+  .navigation > div.column:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+  }
+
+  .navigation > div {
+    min-width: calc(100% / 4 - (60px / 4));
+  }
+  .navigation > div:not(:nth-child(4n)) {
+    margin-right: 11px;
+  }
+  .navigation > div:nth-child(1),
+  .navigation > div:nth-child(2),
+  .navigation > div:nth-child(3),
+  .navigation > div:nth-child(4) {
+    margin-bottom: 20px;
+  }
+
+  /* Paris pictures */
+  .parispictures {
+    height: 370px;
+  }
+  .parispictures .colonne2 {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* HEADER */
+  header span {
+    display: none;
+  }
+  /* parisresume */
+
+  .parisresume .partie2 {
+    display: none;
+  }
+
+  .parisresume button {
+    display: flex;
+  }
+  /* conseil part */
+  .set {
+    display: flex;
+    justify-content: space-around;
+  }
+  .conseil .set div {
+    margin-top: 30px;
+  }
+
+  .conseil .set {
+    flex-wrap: wrap;
+  }
+  .parisresume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+  }
+  /* caroussel part */
+  .caroussel .column img {
+    height: 120px;
+  }
+  .caroussel .circle {
+    border: white 2px solid;
+    height: 35px;
+    width: 35px;
+  }
+  .caroussel .circle i {
+    font-size: 25px;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header img {
+    width: 123px;
+  }
+  header .container {
+    /* HEADER */
+    display: flex;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .hidden {
+    display: flex !important;
+  }
+  /* NAVIGATION */
+
+  .navigation > div span {
+    display: none;
+  }
+  .navigation > div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  /* Paris pictures */
+  .parispictures .colonne2 {
+    display: none;
+  }
+  .parispictures .colonne1 img {
+    border-radius: 20px;
+  }
+  /* paris resume */
+
+  /* conseil part */
+
+  .conseil .set {
+    display: flex;
+    justify-content: center;
+  }
+  .conseil .set div {
+    margin: 15px 0;
+    height: 60px;
+  }
+  /* carroussel part */
+
+  .caroussel {
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+  }
+
+  .caroussel .circle i {
+    font-size: 25px;
+    color: white;
+  }
+  .caroussel .circle {
+    border: white 2px solid;
+    height: 40px;
+    width: 40px;
+    top: 20px;
+    right: 170px;
+  }
+  .caroussel .column img {
+    margin-top: 10px;
+    width: 80%;
+    height: 300px;
+    border-radius: 5px;
+
+    object-fit: cover;
+  }
+  .caroussel .column {
+    width: calc(100% - (10px / 2));
+  }
+}
