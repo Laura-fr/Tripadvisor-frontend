@@ -551,6 +551,7 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  /* HEADER */
   header nav {
     display: none;
   }
@@ -558,7 +559,6 @@ a:hover {
     width: 123px;
   }
   header .container {
-    /* HEADER */
     display: flex;
   }
   h1 {
@@ -587,6 +587,17 @@ a:hover {
   }
   /* paris resume */
 
+  .parisresume p {
+    font-size: 17px;
+  }
+  .partie1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    width: 460px;
+  }
+
   /* conseil part */
 
   .conseil .set {
@@ -614,12 +625,12 @@ a:hover {
     height: 40px;
     width: 40px;
     top: 20px;
-    right: 170px;
+    right: 120px;
   }
   .caroussel .column img {
     margin-top: 10px;
     width: 80%;
-    height: 300px;
+    height: 250px;
     border-radius: 5px;
 
     object-fit: cover;
