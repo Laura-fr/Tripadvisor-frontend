@@ -9,7 +9,6 @@ body {
 
 .container {
   max-width: 1280px;
-  /*background-color: red;*/
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 30px;
@@ -75,7 +74,6 @@ header nav div {
   margin-right: 20px;
 }
 header nav div:hover {
-  /* background-color: rgb(0, 0, 0, 0.9); */
   border: black 3px solid;
   border-radius: 20px;
   padding: 10px;
@@ -120,7 +118,6 @@ header button:hover {
   font-size: 32px;
   margin-top: 90px;
   font-family: "Trip Sans Med";
-
   margin-bottom: 90px;
 }
 .title div {
@@ -145,7 +142,6 @@ main .navigation {
   justify-content: space-between;
   box-sizing: border-box;
   cursor: pointer;
-
   align-items: center;
 }
 .navigation > div:hover {
@@ -241,7 +237,6 @@ main .navigation {
 
 .partie2 {
   width: 525px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -262,7 +257,6 @@ main .navigation {
   font-family: inherit;
   color: white;
   padding: 15px;
-
   background-color: black;
   border-radius: 25px;
   border: none;
@@ -352,7 +346,6 @@ main .navigation {
 }
 .caroussel .pics {
   height: 100%;
-
   flex: 3;
   display: flex;
   overflow: hidden;
@@ -423,7 +416,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: black;
 }
 footer img {
@@ -555,15 +547,19 @@ a:hover {
   header nav {
     display: none;
   }
+
   header img {
     width: 123px;
   }
+
   header .container {
     display: flex;
   }
+
   h1 {
     font-size: 40px;
   }
+
   .hidden {
     display: flex !important;
   }
@@ -572,6 +568,7 @@ a:hover {
   .navigation > div span {
     display: none;
   }
+
   .navigation > div {
     display: flex;
     justify-content: center;
@@ -588,14 +585,11 @@ a:hover {
   /* paris resume */
 
   .parisresume p {
-    font-size: 17px;
+    font-size: 15px;
   }
   .partie1 {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 20px;
-
-    width: 460px;
+    width: 400px;
   }
 
   /* conseil part */
@@ -625,12 +619,12 @@ a:hover {
     height: 40px;
     width: 40px;
     top: 20px;
-    right: 120px;
+    right: 70px;
   }
   .caroussel .column img {
     margin-top: 10px;
     width: 80%;
-    height: 250px;
+    height: 200px;
     border-radius: 5px;
 
     object-fit: cover;
